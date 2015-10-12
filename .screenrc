@@ -1,0 +1,27 @@
+# 在最下一行显示窗口列表和时钟
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%d %M %0c %{g}%H%{-}"
+
+#关闭screen的startup message
+startup_message off
+
+#默认屏显缓冲区行数
+defscrollback 50000
+
+#按 Ctrl-Z w 或 Ctrl-Z Ctrl-W 显示窗口列表
+bind w windowlist -b
+#bind ^w windowlist -b
+
+#关闭错误提示
+vbell off
+
+#Automatically detach on hangup.
+autodetach on
+
+##定义screen的功能键为Ctrl-o。向终端输入Ctrl-o时应按 Ctrl-o o。
+escape ^Oo
+
+##防止中文乱码
+defencoding GBK
+encoding UTF-8 GBK
