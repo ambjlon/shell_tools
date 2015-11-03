@@ -1,5 +1,4 @@
 # .bash_profile
-
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
@@ -7,7 +6,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin:/home/xiaoju/arcanist/bin
+PATH=$PATH:$HOME/bin:/home/xiaoju/arcanist/bin:/home/xiaoju/goworkspace/bin
 export PATH
 
 
@@ -27,3 +26,11 @@ export HISTTIMEFORMAT
 #配置grep的选项
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='5;33'
+
+
+#配置GOPATH
+export GOROOT=/usr/local/go
+export  GOPATH=/home/xiaoju/goworkspace
+export PATH=$PATH:$GOROOT/bin
+
+alias screen="/bin/screen"
