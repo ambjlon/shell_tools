@@ -1,3 +1,4 @@
+# 2015-11-03 如果你发现进入screen后中文乱码,各种不爽.请检查screen的版本是不是太低,最好更新为最新的http://ftp.gnu.org/gnu/screen/. 然后问题会解决
 # 在最下一行显示窗口列表和时钟
 hardstatus on
 hardstatus alwayslastline
@@ -9,7 +10,7 @@ startup_message off
 #默认屏显缓冲区行数
 defscrollback 50000
 
-#按 Ctrl-Z w 或 Ctrl-Z Ctrl-W 显示窗口列表
+#按 Ctrl-o w 或 Ctrl-o Ctrl-W 显示窗口列表
 bind w windowlist -b
 #bind ^w windowlist -b
 
