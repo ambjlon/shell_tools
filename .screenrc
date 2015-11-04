@@ -19,13 +19,13 @@ vbell off
 #Automatically detach on hangup.
 autodetach on
 
-##定义screen的功能键为Ctrl-o。向终端输入Ctrl-o时应按 Ctrl-o o。
-escape ^Oo
+##定义screen的功能键为Ctrl-z。向终端输入Ctrl-z时应按 Ctrl-z z。
+escape ^Zz
 ## screen默认使用8色,下面的配置使用256色. 但是这个貌似和正常登陆的256色还是不同的,尤其是emacs,显示的颜色用肉眼能看到明显的不同.
 term xterm-256color
 
 
 ##防止中文乱码
-##实际上加入这个配置没任何作用. 当我安装最新的screen后,去掉这个配置才能不乱码. 坑!!
-#defencoding GBK
-#encoding UTF-8 GBK
+defutf8 on
+defencoding UTF-8
+encoding UTF-8 UTF-8
