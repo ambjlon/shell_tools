@@ -5,7 +5,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-PATH=$PATH:$HOME/bin
+PATH=$HOME/bin:$PATH
 
 #配置彩色显示
 if [ "$TERM" == "xterm" ]; then
@@ -28,5 +28,8 @@ export GREP_COLOR='5;33'
 export GOROOT=/usr/local/go
 export GOPATH=/home/xiaoju/goworkspace
 
+alias ec="emacsclient"
+#配置autojump
+[[ -s /home/xiaoju/.autojump/etc/profile.d/autojump.sh ]] && source /home/xiaoju/.autojump/etc/profile.d/autojump.sh
 export PATH=$PATH:/home/xiaoju/arcanist/bin:$GOROOT/bin:$GOPATH/bin
-export PATH
+export PATH=$PATH:/home/xiaoju/php7/bin

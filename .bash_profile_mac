@@ -1,0 +1,10 @@
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export PS1="\[\e[1;32m\]\u\[\e[1;33m\]@\[\e[1;35m\]\w \[\e[1;34m\]\t\[\e[1;37m\]\n$"
+alias ls='ls -F --show-control-chars --color=auto'
+eval `dircolors ~/.dir\_colors`
+
+HISTFILESIZE=40000
+HISTSIZE=400000
+HISTTIMEFORMAT='%F %T'
+export HISTTIMEFORMAT
