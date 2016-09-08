@@ -69,6 +69,10 @@ HISTFILESIZE=40000
 HISTSIZE=400000
 HISTTIMEFORMAT='%F %T'
 export HISTTIMEFORMAT
+alias ec="emacsclient -c"
+alias sudo="sudo "
+bindkey '^x^r' history-incremental-pattern-search-backward
+bindkey '^x^s' history-incremental-pattern-search-forward
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
