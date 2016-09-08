@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/yanglong/.oh-my-zsh
+export ZSH=/Users/didi/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -70,7 +70,13 @@ HISTFILESIZE=40000
 HISTSIZE=400000
 HISTTIMEFORMAT='%F %T'
 export HISTTIMEFORMAT
-
+alias ec="emacsclient -c"
+alias sudo="sudo "
+#http://www.shellperson.net/using-sudo-with-an-alias/
+#If the last character of the alias value is a blank, then the next command word following the alias is also checked for alias expansion.
+#otherwise ec command is not found
+bindkey '^x^r' history-incremental-pattern-search-backward
+bindkey '^x^s' history-incremental-pattern-search-forward
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
